@@ -2,8 +2,9 @@ import daoservice.DAOHttpService;
 import daoservice.DAOJsonService;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
        String json = DAOHttpService.getJSONOffline();
-        DAOJsonService.deserialize(json);
+        if (DAOJsonService.deserialize(json) != null)
+            System.out.println("hat geklapt");
     }
 }

@@ -4,30 +4,29 @@ import de.sbs.lagerfxmodel.LagerModelInterface;
 
 public class LagerFXModel implements LagerModelInterface {
 
-    private int userID;
+    private int userId;
     private int id;
     private String title;
     private String body;
     
     @Override
     public String getBody() {
-     return null;
+     return body;
     }
 
     @Override
     public int getId() {
-        return 0;
+        return id;
     }
 
     @Override
     public String getTitle() {
-        return null;
+        return title;
     }
 
     @Override
     public int getUserId() {
-        return 0;
+        return userId;
     }
     
-
 }
